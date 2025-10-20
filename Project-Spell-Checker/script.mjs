@@ -7,5 +7,6 @@
 import getDictionarySize from "./common.mjs";
 
 window.onload = function() {
-    document.querySelector("body").innerText = `There are ${getDictionarySize()} words in the Basic English dictionary`;
+   // document.querySelector("body").innerText = `There are ${getDictionarySize()} words in the Basic English dictionary`;
+   
 }
