@@ -8,9 +8,12 @@
 body {
     font-family: 'Segoe UI', 'Roboto', sans-serif;
     line-height: 1.5;
-
     background-color: #B8E1FF;
     color: #333;
+}
+
+h1 {
+    text-align: center;
 }
 #userInput {
     width: 50%;
@@ -46,4 +49,61 @@ body {
 
 #checkButton:hover {
   background-color: #0056b3;
+}
+
+/* Error message styles */
+#errorContainer {
+    margin-top: 20px;
+    max-width: 600px;
+    width: 50%;
+}
+
+.error-message {
+    color: #d32f2f;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.misspelled-words {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.misspelled-word-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.misspelled-word {
+    font-weight: bold;
+    color: #d32f2f;
+    font-size: 14px;
+}
+
+.add-to-dict-button {
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-dict-button:hover {
+    background-color: #218838;
+}
+
+.add-to-dict-button:focus {
+    outline: 2px solid #1e7e34;
+    outline-offset: 2px;
 }
